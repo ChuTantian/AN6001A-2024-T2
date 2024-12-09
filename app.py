@@ -2,8 +2,8 @@
 from flask import Flask
 from flask import render_template, request, redirect
 import textblob
-#import os
-#api = os.getenv("makersuite")
+import os
+api = os.getenv("makersuite")
 
 app = Flask(__name__)
 
@@ -28,7 +28,7 @@ def SA_result():
 
 @app.route("/GenAI", methods=["POST"])
 def GenAI():
-    return redirect("https://chatgpt.com/")
+    return redirect(" https://makersuite.google.com/")
 
 if __name__ == '__main__':
     app.run() # app.run(port=1234)
