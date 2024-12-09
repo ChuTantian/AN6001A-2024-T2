@@ -26,9 +26,5 @@ def SA_result():
     r = textblob.TextBlob(q).sentiment
     return(render_template('SA_result.html', r=r))
 
-@app.route("/GenAI", methods=["POST"])
-def GenAI():
-    return redirect(" https://makersuite.google.com/")
-
 if __name__ == '__main__':
     app.run() # app.run(port=1234)
